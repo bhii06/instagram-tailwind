@@ -1,0 +1,424 @@
+@import "tailwindcss";
+
+body {
+    @apply bg-[rgb(7,6,8)]
+}
+
+.layout {
+    @apply  grid grid-cols-[150px_1fr]
+}
+
+.nav-left {
+    @apply  bg-[rgb(7,6,8)] text-center top-0 left-0 w-auto h-screen flex flex-col items-center 
+}
+
+.nav-item {
+    @apply  relative flex items-center justify-center no-underline cursor-pointer 
+}
+
+.dropdown {
+    @apply  absolute left-full top-1/2 -translate-y-1/2 bg-[#222] text-white py-[6px] px-3 rounded-md whitespace-nowrap opacity-0 pointer-events-none transition-all duration-200 ease-in-out
+}
+
+.nav-item:hover .dropdown {
+    @apply  opacity-1 pointer-events-auto -translate-y-1/2 translate-x-[5px]
+}
+
+.logo-wrap {
+    @apply  mb-[17vh]
+}
+
+.icon {
+    @apply  w-[5vh] h-[6vh] py-[1.5vh] pr-[1.5vh] pl-0 flex flex-col
+}
+
+.icon:hover {
+    @apply  opacity-[0.5]
+}
+
+.profil {
+    @apply  w-[5vh] h-[6vh] py-[1.5vh] pr-[1.5vh] pl-0 rounded-full object-cover
+}
+
+.profil:hover {
+    @apply  opacity-[0.5]
+}
+
+.icon, .profil, .logo-wrap {
+    @apply  transition-opacity duration-[0.8s] ease-in-out
+}
+
+/* -----------------------search panel----------------------- */
+.search-panel {
+    @apply  fixed top-0 left-0 w-[350px] h-[100vh] bg-[#111] text-white p-[20px] hidden z-[999]
+}
+
+.search-panel:target {
+    @apply  block
+}
+
+.close-search {
+    @apply  block text-right text-white no-underline text-[30px] pl-[50%] 
+}
+
+.search-panel h3 {
+    @apply  text-left text-[25px] mt-[10px] mb-[25px] 
+}
+
+.search-panel input {
+    @apply  w-[270px] h-[27px] rounded-[15px]  text-black bg-white m-5
+}
+
+/* ======================================================================== */
+
+/*============================ like or notif ===============================*/
+.close-notif {
+    @apply  block text-right text-white no-underline text-[30px]
+}
+
+.notif-panel {
+    @apply  fixed top-0 left-0 w-[350px] h-[100vh] bg-[#111] text-white p-[20px] hidden z-[999] overflow-y-auto
+}
+
+.notif-panel h3{    
+    @apply  text-left text-[25px] 
+}
+
+.notif-panel h4 {
+    @apply  text-left
+}
+
+.notif-panel:target {
+    @apply  block
+}
+
+.notif-content {
+    @apply  flex border-b border-b border-white
+}
+
+.notif-content a{
+    @apply  flex no-underline text-white py-[20px] px-[0]
+}
+
+.notif-content img {
+    @apply  w-[5vh] h-[5vh] p-[10px]
+}
+
+.text-content {
+    @apply  my-[2px] mx-[0] leading-[1.2]
+}
+
+/* =========================== Message Panel ================================ */
+.message-panel {
+    @apply fixed top-0 left-[100px] w-[350px] h-[100vh] bg-[#111] text-white p-[20px] hidden z-[500] overflow-y-auto
+}
+
+.message-panel h3{
+    @apply text-left text-[25px]
+}
+
+.message-panel:target {
+    @apply block
+}
+
+.close-message {
+    @apply block text-right text-white no-underline text-[30px]
+}
+
+.msg-content {
+    @apply flex text-left
+}
+
+.msg-content a {
+    @apply flex no-underline text-white py-[10px] px-[0]
+}
+
+.msg-content img {
+    @apply w-[6vh] h-[4vh] py-[0] px-[10px] rounded-[50%]
+}
+
+.text-content {
+    @apply my-[2px] mx-[0] leading-[1.2]
+}
+
+.call-vc-details {
+    @apply flex 
+}
+
+/* ============================ chat panel ================================== */
+.chat-panel {
+    @apply fixed top-0 left-[100px] w-[1200px] h-[100vh] bg-[#222] text-white hidden z-[600] flex-col 
+}
+
+.chat-panel:target {
+    @apply flex 
+}
+
+.close-chat {
+    @apply block text-right text-white no-underline text-[20px] py-[0] px-[10px]
+}
+
+.chat-panel img {
+    @apply w-[6vh] h-[4vh] py-[0] px-[10px] rounded-[50%]
+}
+
+.chat-content {
+    @apply flex text-left border-b border-[0.5px] border-[gray] justify-between
+}
+
+.chat-content a {
+    @apply no-underline text-white flex py-[10px] px-[0]
+}
+
+.chat-body {
+    @apply flex-1 overflow-y-auto p-[10px]
+}
+
+.chat-input {
+    @apply flex gap-[10px] p-[10px] bg-[#333] mt-auto
+}
+
+.chat-input input {
+    @apply flex-1 p-[8px] rounded-[20px] border-none outline-none
+}
+
+.chat-input button {
+    @apply bg-[#0095f6] text-white border-none py-[8px] px-[15px] rounded-[20px] cursor-pointer
+}
+
+/* =================responsive styles================= */
+@media (max-height: 500px) {
+    .icon {
+        @apply w-[20px] h-[20px] p-[10px]
+    }
+    .profil {
+        @apply w-[20px] h-[20px] p-[0.5vh]
+    }
+    .logo-wrap {
+        @apply mb-[3vh]
+    }
+}
+/* ===================================================== */
+
+/* ================feed styles================= */
+.story-ig {
+    @apply bg-[rgb(7,6,8)] py-[37px] px-[10px] w-[100%] max-w-[700px] col-start-2 overflow-x-auto gap-[10px] flex 
+}
+
+.story-ig a {
+    @apply p-[10px] no-underline text-center text-white text-base
+}
+
+.story-ring {
+    @apply w-[76px] h-[76px] p-[3px] rounded-full bg-gradient-to-tr from-[#feda75] via-[#d62976] to-[#4f5bd5] flex items-center justify-center;
+}
+.story-ring img {
+    @apply block rounded-[50%]  
+}
+
+.story-ig img {
+    @apply   h-[60px] 
+}
+
+.story-ig, .story-ig img, .story-ring{
+    @apply transition-all duration-[0.8s] ease-in-out
+}
+/* =========================================================== */
+
+/* =============feed content================= */
+main {
+    @apply col-start-2 min-h-[600px] bg-[rgb(7,6,8)] flex flex-col items-center m-auto w-full max-w-[675px] py-2.5 px-[50px]
+}
+
+.post {
+    @apply p-[10px] 
+}
+
+.post-header {
+    @apply flex p-[10px] 
+}
+
+.post p {
+    @apply text-white text-center p-[20px] text-[16px]
+}
+
+.avatar {
+    @apply w-[70px] h-[65px] p-[15px] rounded-[50%]
+}
+
+.other {
+    @apply ml-auto
+}
+
+main, .post, .post header, .post p, .avatar, .other {
+    @apply transition-all duration-[0.8s] ease-in-out
+}
+
+.other img {
+    @apply pl-[15px] pt-[10px] pr-[10px] pb-[10px] w-[55px] h-[60px]
+}
+
+.post-media{
+    @apply p-[5px] aspect-square overflow-hidden
+}
+.post-media img {
+    @apply flex w-[100%] h-[100%] object-cover rounded-[2.5%]
+}
+
+.other img, .post-media, .post-media img {
+    @apply transition-all duration-[0.8s] ease-in-out
+}
+
+/* ==============button styles============= */
+.btn-post {
+    @apply flex p-[3px]
+}
+
+.btn-post button {
+    @apply bg-transparent gap-[5px] border-none
+}
+
+.btn-post img {
+    @apply w-[30px] h-[30px] p-[3px]
+}
+
+.btn-save {
+    @apply ml-auto
+}
+
+.btn-post button:hover {
+    @apply scale-[1.15] transition-transform duration-[0.2s] ease-in-out
+}
+
+.btn-post, .btn-post button, .btn-post img, .btn-save {
+    @apply transition-all duration-[0.8s] ease-in-out
+}
+
+/* ===============caption styles=============== */
+.caption {
+    @apply m-[5px]
+}
+
+.caption p  {
+    @apply text-left p-[5px] text-[16px]
+}
+
+/* ==================button Dm =================*/
+.nav-dm {
+    @apply fixed bg-[rgb(7,6,8)] w-[130px] rounded-[50px] bottom-[20px] right-[70px]
+}
+
+.nav-dm a {
+    @apply flex no-underline m-[3px] py-[5px] px-[6px] text-white
+}
+
+.nav-dm img {
+    @apply flex h-[25px] my-[0] mx-[15px]
+
+}
+
+.nav-dm:hover {
+    @apply  scale-[1.15] transition-transform duration-[0.2s] ease-in-out
+}
+
+.nav-bottom {
+    @apply fixed bottom-0 left-0 w-full bg-[rgb(7,6,8)] hidden flex justify-around items-center py-2 border-t border-[rgb(7,6,8)] z-[1000]
+}
+
+.nav-bottom a {
+    @apply no-underline text-white flex flex-col align-[center] text-[12px]
+}
+
+.nav-bottom img {
+    @apply w-[24px] h-[24px] mb-[4px] rounded-[50%]
+}
+/* ==================== Tablet ==================== */
+@media (max-width: 900px) {
+    .layout {
+        @apply grid-cols-[80px_1fr]
+    }
+
+    .nav-left {
+        @apply ml-[10px] 
+    }
+
+    .dropdown {
+        @apply hidden
+    }
+
+    .message-panel{
+        @apply left-[80px] w-[250px]
+    }
+
+    .chat-pannel {
+        @apply left-0 w-full max-w-none
+    }
+
+    .story-ig {
+        @apply max-w-[100%] p-[20px] gap-[6px]
+    }
+
+    .story-ig img {
+        @apply h-[60px] w-[60px]
+    }
+
+    main {
+        @apply max-w-full p-2.5 mx-auto
+    }
+
+    .nav-dm {
+        @apply hidden
+    }
+
+    .nav-bottom {
+        @apply flex
+    }
+
+    .search-panel,
+    .notif-panel {
+        @apply w-full h-screen max-w-none z-[9999]
+    }
+}
+
+/* ==================== HP ==================== */
+@media (max-width: 600px) {
+    .layout{
+        @apply grid-cols-[1fr]
+    }
+
+    .nav-left {
+        @apply hidden
+    }
+
+    .message-panel {
+        @apply left-0 w-[100%] h-[100vh]
+    }
+
+    .chat-panel {
+        @apply left-0 w-[96%] h-[100vh]
+    }
+
+    .chat-input {
+        @apply p-[8px]
+    }
+
+    .story-ig {
+        @apply p-[10px] gap-[4px] overflow-x-scroll
+    }
+
+    .story-ig img {
+        @apply h-[50px] w-[50px]
+    }
+
+    main {
+        @apply max-w-full p-2.5 mx-auto
+    }
+
+    .nav-dm {
+        @apply hidden
+    }
+
+    .nav-bottom {
+        @apply flex
+    }
+}

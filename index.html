@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+      <!-- navbar side kiri -->
+     <div class="layout">
+        <aside class="nav-left sticky" >
+            <div class="logo-wrap">
+                <a href="" >
+                    <img src="/icon/logo.png" class="icon">
+                    <span class=""></span>
+                </a>
+            </div>
+            
+            <div class="logo-wrap">
+                 <a href="index.html" class="nav-item">
+                    <img src="/icon/home.png" class="icon" >
+                    <span class="dropdown">Home</span>
+                </a>
+
+                <a href="Reels.html" class="nav-item">
+                    <img src="/icon/reels.png" class="icon" alt="">
+                    <span class="dropdown">Reels</span>
+                </a>  
+                
+                <!-- ==================== Message Panel ============================ -->
+                <a href="#message" class="nav-item">
+                    <img src="/icon/dm.png" class="icon" alt="">
+                    <span class="dropdown">Message</span>    
+                </a>    
+                <!-- =============================================================== -->
+
+                 <!-- ================search panel=================================== -->
+                <a href="#search" class="nav-item">
+                    <img src="/icon/search.png" class="icon" alt="">
+                    <span class="dropdown" >Search</span>
+                </a>
+
+                <div id="search" class="search-panel">
+                    <a href="#" class="close-search">×</a>
+                    <h3>Cari</h3>
+                    <input type="text" placeholder="Cari..." class="search-input" >
+                    <p>Tidak ada pencarian terbaru</p>
+                </div>
+                <!-- ================================================================ -->
+                 <a href="" class="nav-item">
+                    <img src="/icon/explore.png" class="icon" alt="">
+                    <span class="dropdown">Explore</span>
+                </a>
+
+                <!-- ================ like Panel =================================== -->
+                <a href="#notif" class="nav-item">
+                    <img src="/icon/like.png" class="icon">
+                    <span class="dropdown">Like</span>
+                </a>
+
+                <div id="notif" class="notif-panel">
+                    <a href="#" class="close-notif">×</a>
+                        <h3>Notifikasi</h3>
+                        <div class="notif-content">
+                            <a href="">
+                                <img src="/icon/unknown.png" alt="">
+                                <div class="text-content">
+                                    <p>permintaan mengikuti</p>
+                                    <p style="text-align: left; color: gray ;">chika + 6 lainnya</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <h4>Minggu Ini</h4>
+                        <div class="notif-content">
+                            <a href="">
+                                <img src="/icon/unknown.png" alt="">
+                                <div class="text-content">
+                                    <p> <b>Chika</b> menyukai cerita Anda</p>
+                                    <p style="text-align: left; color: gray ;">20 februari</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <h4>Bulan Ini</h4>
+                        <div class="notif-content">
+                            <a href="">
+                                <img src="/icon/unknown.png" alt="">
+                                <div class="text-content">
+                                    <p> <b>Reza</b> menyukai cerita Anda</p>
+                                    <p style="text-align: left; color: gray ;">5 hari</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <!-- ==================================================================== -->
+
+                <a href="" class="nav-item">
+                    <img src="/icon/plus.png" class="icon" alt="">
+                    <span class="dropdown">Upload</span>
+                </a>
+
+                <a href="profile.html" class="nav-item">
+                    <img src="/icon/profil.jpeg" class="profil">
+                    <span class="dropdown">Profile</span>
+                </a>
+            </div>
+            
+            <a href="#other" class="nav-item">
+                <img src="/icon/other.png" class="icon">
+                <span class="dropdown">Other</span>
+            </a>                
+
+            <a href="" class="nav-item">
+                <img src="/icon/meta.png" class="icon" alt="">
+                <span class="dropdown">Meta</span>
+            </a>
+        </aside>
+
+        <!-- Panel Message (di luar sidebar) -->
+        <!-- Panel Message -->
+        <div id="message" class="message-panel">
+            <a href="#" class="close-message">×</a>
+            <h3>Message</h3>
+
+        <div class="msg-content">
+            <a href="#chat1">
+                <img src="/story/B.png" alt="">
+                <div class="text-content">
+                    <b>Bagas</b>
+                    <p style="color:gray;">Aktif 11 jam lalu</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="msg-content">
+            <a href="#chat2">
+                <img src="/story/D.png" alt="">
+                <div class="text-content">
+                    <b>Dapa</b>
+                    <p style="color:gray;">Aktif 1 jam lalu</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="msg-content">
+            <a href="#chat3">
+                <img src="/story/G.png" alt="">
+                <div class="text-content">
+                    <b>Galih</b>
+                    <p style="color:gray;">Aktif 6 jam lalu</p>
+                </div>
+            </a>
+        </div>
+        </div>
+
+        <!--========================= Bagass Panels ====================-->
+        <div id="chat1" class="chat-panel">
+            <a href="#message" class="close-chat">×</a>
+            <div class="chat-content">
+                <a href="">
+                    <img src="/story/B.png" alt="">
+                    <div class="text-content">
+                        <b>Bagas</b>
+                        <p style="color:gray;">bagas arianto</p>
+                    </div>      
+                </a>
+                
+                <div class="call-vc-details">
+                    <a href=""><img src="/icon/call.png" alt=""></a>
+                    <a href=""><img src="/icon/VC.png" alt=""></a>
+                    <a href=""><img src="/icon/details.png" alt=""></a>
+                </div>      
+            </div>
+            
+            <!-- Bagian isi chat -->
+            <div class="chat-body">
+                <p>Halo, ini isi chat dengan Bagas...</p>
+            </div>
+
+            <!-- Bagian input pesan -->
+            <div class="chat-input">
+                <input type="text" placeholder="Tulis pesan..." />
+                <button type="submit">Kirim</button>
+            </div>
+        </div>
+
+        <!-- ======================== Dapa Panels ======================-->
+        <div id="chat2" class="chat-panel">
+            <a href="#message" class="close-chat">×</a>
+            <div class="chat-content">
+                <a href="">
+                    <img src="/story/D.png" alt="">
+                    <div class="text-content">
+                        <b>Dapa</b>
+                        <p style="color:gray;">Dapong</p>
+                    </div>      
+                </a>
+                
+                <div class="call-vc-details">
+                    <a href=""><img src="/icon/call.png" alt=""></a>
+                    <a href=""><img src="/icon/VC.png" alt=""></a>
+                    <a href=""><img src="/icon/details.png" alt=""></a>
+                </div>      
+            </div>
+            
+            <!-- Bagian isi chat -->
+            <div class="chat-body">
+                <p>Halo, ini isi chat dengan Dapa...</p>
+            </div>
+
+            <!-- Bagian input pesan -->
+            <div class="chat-input">
+                <input type="text" placeholder="Tulis pesan..." />
+                <button type="submit">Kirim</button>
+            </div>
+        </div>
+
+        <!-- =========================== Galih Panels ========================-->
+        <div id="chat3" class="chat-panel">
+            <a href="#message" class="close-chat">×</a>
+            <div class="chat-content">
+                <a href="">
+                    <img src="/story/G.png" alt="">
+                    <div class="text-content">
+                        <b>Galih</b>
+                        <p style="color:gray;">G</p>
+                    </div>      
+                </a>
+                
+                <div class="call-vc-details">
+                    <a href=""><img src="/icon/call.png" alt=""></a>
+                    <a href=""><img src="/icon/VC.png" alt=""></a>
+                    <a href=""><img src="/icon/details.png" alt=""></a>
+                </div>      
+            </div>
+            
+            <!-- Bagian isi chat -->
+            <div class="chat-body">
+                <p>Halo, ini isi chat dengan Galih...</p>
+            </div>
+
+            <!-- Bagian input pesan -->
+            <div class="chat-input">
+                <input type="text" placeholder="Tulis pesan..." />
+                <button type="submit">Kirim</button>
+            </div>
+        </div>
+        
+        <!-- ===========================bottom navigation======================= -->
+        <div class="nav-bottom sticky">
+            <a href="index.html"><img src="/icon/home.png" alt=""><span>Home</span></a>
+            <a href="#search"><img src="/icon/search.png" alt=""><span>Search</span></a>
+            <a href="Reels.html"><img src="/icon/reels.png" alt=""><span>Reels</span></a>
+            <a href="#notif"><img src="/icon/like.png" alt=""><span>Like</span></a>
+            <a href="profile.html"><img src="/icon/profil.jpeg" alt=""><span>Profile</span></a>
+        </div>
+        <!-- =================================================================== -->
+
+       
+        <main col-start-2>
+            <section class="story-ig col-start-2">
+                <a href="">
+                    <div class="story-ring">
+                        <img src="/story/A.png" alt="">
+                    </div>
+                    <p>abhi</p>
+                </a>
+
+                <a href="">
+                    <div class="story-ring">
+                        <img src="/story/B.png" alt="">
+                    </div>
+                    <P>bagas</P>
+                </a>
+
+                <a href="">
+                    <div class="story-ring">
+                        <img src="/story/C.png" alt="">
+                    </div>
+                    <p>cantika</p>
+                </a>
+
+                <a href="">
+                    <div class="story-ring">
+                        <img src="/story/D.png" alt="">
+                    </div>
+                    <p>dafa</p>
+                </a>
+
+                <a href="">
+                    <div class="story-ring">
+                        <img src="/story/E.png" alt="">
+                    </div>
+                    <p>edward</p>
+                </a>
+
+                <a href="">
+                    <div class="story-ring">
+                        <img src="/story/F.png" alt="">
+                    </div>  
+                    <p>fadiyah</p>            
+                </a>
+
+                <a href="">
+                    <div class="story-ring">
+                        <img src="/story/G.png" alt="">
+                    </div>
+                    <p>gerald</p>
+                </a>
+
+                <a href="">
+                    <div class="story-ring">
+                        <img src="/story/H.png" alt="">
+                    </div>
+                    <p>hindia</p>
+                </a>
+
+                <a href="">
+                    <div class="story-ring">
+                        <img src="/story/I.png" alt="">
+                    </div>
+                    <p>isac</p>
+                </a>
+            </section>
+
+            <article class="post">
+                <!-- avatar dan other -->
+                <header class="flex">
+                    <img src="/story/A.png" class="avatar"  alt="">
+                    <p>abhi</p>
+                    <a href="" class="other">
+                        <img src="/icon/other-post.png" alt="">
+                    </a>
+                </header>
+
+                <div class="post-media">
+                    <img src="/icon/profil.jpeg" alt="">
+                </div>
+
+                <div class="btn-post">
+                    <button >
+                        <img src="/icon/like.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/comment.png
+                        " alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/repost.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/dm.png" alt="">
+                    </button>
+                    
+                    <button class="btn-save">
+                        <img src="/icon/save.png" alt="">
+                    </button>
+                </div>
+
+                <div class="caption">
+                    <p> <span><b>abhi </b></span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum. </p>
+                </div>
+            </article>
+
+            <article class="post">
+                <!-- avatar dan other -->
+                <header class="flex">
+                    <img src="/story/anta.png" class="avatar"  alt="">
+                    <p>Kyrie</p>
+                    <a href="" class="other">
+                        <img src="/icon/other-post.png" alt="">
+                    </a>
+                </header>
+
+                <div class="post-media">
+                    <img src="/icon/Kyrie.png" alt="">
+                </div>
+
+                <div class="btn-post">
+                    <button >
+                        <img src="/icon/like.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/comment.png
+                        " alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/repost.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/dm.png" alt="">
+                    </button>
+                    
+                    <button class="btn-save">
+                        <img src="/icon/save.png" alt="">
+                    </button>
+                </div>
+
+                <div class="caption">
+                    <p> <span><b>Kyrie </b></span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum. </p>
+                </div>
+            </article>
+
+            <article class="post">
+                <!-- avatar dan other -->
+                <header class="flex">
+                    <img src="/story/C30.png" class="avatar"  alt="">
+                    <p>Curry</p>
+                    <a href="" class="other">
+                        <img src="/icon/other-post.png" alt="">
+                    </a>
+                </header>
+
+                <div class="post-media">
+                    <img src="/icon/curry.png" alt="">
+                </div>
+
+                <div class="btn-post">
+                    <button >
+                        <img src="/icon/like.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/comment.png
+                        " alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/repost.png" alt="">
+                    </button>
+                    
+                    <button>
+                        <img src="/icon/dm.png" alt="">
+                    </button>
+                    
+                    <button class="btn-save">
+                        <img src="/icon/save.png" alt="">
+                    </button>
+                </div>
+
+                <div class="caption">
+                    <p> <span><b>Curry` </b></span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum. </p>
+                </div>
+            </article>
+        </main>
+     </div>
+
+     <div class="nav-dm">
+        <a href="">
+            <img src="/icon/dm.png" alt="">
+                pesan
+        </a>
+     </div>
+</body>
+</html>
