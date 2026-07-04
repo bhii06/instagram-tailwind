@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "./profile.css";
+@import "./highlight.css";
 
 body {
     @apply bg-[rgb(7,6,8)]
