@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: '/Instagram-tailwind/', // Sesuaikan kapital 'I' jika nama repo Anda memang besar
+  base: '/instagram-tailwind/', // Sesuaikan kapital 'I' jika nama repo Anda memang besar
   build: {
     rollupOptions: {
       input: {
