@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@source "./*.html";
+
 @import "./profile.css";
 @import "./highlight.css";
 
